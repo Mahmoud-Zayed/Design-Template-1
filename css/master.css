@@ -1,0 +1,376 @@
+
+*,*:after,*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+}
+.clearfix {
+    clear: both;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Start With Header */
+section.header {
+    height: 650px;
+    background-image: url(../image/header-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+section.header .header_head {
+    padding-top: 25px;
+}
+section.header .header_head img {
+    float: left;
+}
+section.header .header_head nav {
+    float: right;
+}
+section.header .header_head nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+section.header .header_head nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+section.header .header_content {
+    width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+section.header .header_content h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2%;
+}
+section.header .header_content p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 2%;
+}
+section.header .header_content button {
+    width: 180px;
+    border: 0;
+    outline: none;
+    padding: 18px;
+    font-size: 15px;
+    margin-left: 3%;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+section.header .header_content button:first-child {
+    background-color: #fff;
+    color: #000;
+}
+section.header .header_content button:last-child {
+    background-color: #8be2e5;
+    color: #fff;
+}
+section.header .header_content button:hover {
+    background-color: #050f2c;
+    color: #74d2e7;
+    transition: all 0.5s ease-in-out;
+}
+section.header .header_footer {
+    width: 30px;
+    height: 55px;
+    position: absolute;
+    bottom: 10%;
+    left: 49.7%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+section.header .header_footer .scroll {
+    width: 5px;
+    height: 10px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    top: 6px;
+    animation: scrolling 1.5s ease-in-out infinite;
+}
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        top: 6px;
+    }
+    30% {
+        opacity: 1;
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+        top: 30px;
+    }
+}
+/* End With Header */
+
+/* Start With Be The Fisrt  */
+section.befirst {
+    height: 600px;
+    background-image: url(../image/be-the-first-bg.jpg);
+    padding-top: 7%;
+    margin-bottom: 15%;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.befirst .befirst_center h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+section.befirst .befirst_center p {
+    color: #fff;
+    margin: 2%;
+    font-size: 20px;
+}
+section.befirst .befirst_img {
+    text-align: center;
+}
+section.befirst .befirst_img img {
+    width: 400px;
+}
+/* End With Be The Fisrt  */
+
+/* Start Feature Sectoin */
+section.feature {
+    padding-bottom: 20%;
+    margin-bottom: 3%;
+}
+section.feature .feature_feat {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+section.feature .feature_feat:nth-of-type(1) {
+    margin-left: 0;
+}
+section.feature .feature_feat:nth-of-type(1) hr {
+    height: 5px;
+    background-color: #6d3f96;
+    border: 0;
+}
+section.feature .feature_feat:nth-of-type(2) hr {
+    height: 5px;
+    background-color: #70cbce;
+    border: 0;
+}
+section.feature .feature_feat:nth-of-type(3) hr {
+    height: 5px;
+    background-color: #fdc05d;
+    border: 0;
+}
+section.feature .feature_feat h2 {
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+section.feature .feature_feat p {
+    color: #929496;
+    line-height: 1.3;
+}
+/* End Feature Sectoin */
+
+/* Start Pricing Section */
+section.pricing {
+    padding-top: 7%;
+    padding-bottom: 10%;
+    background-color: #70cbce;
+    height: auto;
+    text-align: center;
+}
+section.pricing h2 {
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+section.pricing p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 3%;
+}
+section.pricing .pricing_flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+section.pricing .pricing_flex .flex_item {
+    width: 32%;
+}
+section.pricing .pricing_flex .flex_item:nth-of-type(2) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+section.pricing .pricing_flex .flex_item:nth-of-type(1),
+section.pricing .pricing_flex .flex_item:nth-of-type(3) {
+    margin-top: 3%;
+}
+section.pricing .pricing_flex .flex_item ul {
+    list-style: none;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing_flex .flex_item ul:hover {
+    margin-top: -10px;
+}
+section.pricing .pricing_flex .flex_item ul:hover li.doller {
+    background-color: #333;
+}
+section.pricing .pricing_flex .flex_item ul li.person {
+    background-color: #231f20;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section.pricing .pricing_flex .flex_item ul li.doller {
+    background-color: #231f20;
+    color: #fff;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing_flex .flex_item ul li.doller small {
+    font-weight: normal;
+    color: #929496;
+}
+section.pricing .pricing_flex .flex_item ul li.list {
+    padding: 20px;
+    border-bottom: 1px solid #e8eaea;
+    font-weight: bold;
+}
+section.pricing .pricing_flex .flex_item ul li.content {
+    color: #929496;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+section.pricing .pricing_flex .flex_item ul li.btn {
+    padding: 15px;
+    color: #70cbce;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+section.pricing .pricing_flex .flex_item ul li.btn:hover {
+    background-color: #f3f3f3;
+}
+/* End Pricing Section */
+
+/* Start Invite Section */
+section.invite {
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+section.invite i {
+    color: #70cbce;
+    border: 2px solid #70cbce;
+    border-radius: 50%;
+    padding: 18px;
+}
+section.invite h2 {
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+section.invite p {
+    margin-bottom: 2%;
+    color: #929496;
+}
+section.invite input {
+    display: block;
+    width: 300px;
+    margin: auto;
+    height: 50px;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+section.invite input::-webkit-input-placeholder {
+    color: #aaa;
+}
+section.invite button {
+    width: 200px;
+    height: 50px;
+    background-color: #70cbce;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* End Invite Section */
+
+/* Start Info Section */
+section.info {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+section.info hr {
+    height: 2px;
+    background-color: #999;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section.info .info_desc {
+    width: 70%;
+    margin: auto;
+    color: #555;
+}
+section.info .info_desc .info_img {
+    width: 20%;
+    float: left;
+}
+section.info .info_desc .info_information {
+    width: 80%;
+    float: left;
+}
+/* End Info Section */
+
+/* Start Footer Section */
+footer {
+    padding-bottom: 5%;
+}
+footer .left {
+    float: left;
+    margin-top: 10px;
+    color: #777;
+}
+footer .left span {
+    padding-right: 10px;
+}
+footer .right {
+    float: right;
+}
+footer .right span {
+    color: #777;
+}
+/* End Footer Section */
